@@ -1,1 +1,1 @@
-# Chicago-watercolor-map
+# Chicago-sat-map
