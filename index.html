@@ -18,10 +18,11 @@ var map = L.map('mymap', {
     center: [41.8939629, -87.6070101],
     zoom: 14
 });
-L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
-    attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.',
-    maxZoom: 10,
-    minZoom: 4
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.satellite',
+    accessToken: 'pk.eyJ1IjoiaGF5bGV5dGF5bG9yNSIsImEiOiJja2V4aHowcHgyaWRhMnhtcm1qZ3N3MjdkIn0.9OBxGf2J4p9QmAsiYn_-9Q'
 }).addTo(map);
 </script>
     </body>
